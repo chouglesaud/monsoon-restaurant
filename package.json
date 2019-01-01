@@ -1,0 +1,27 @@
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "description": "monsoon restaurant menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chougle-saud/monsoon-restaurant.git"
+  },
+  "author": "saud chougle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chougle-saud/monsoon-restaurant/issues"
+  },
+  "homepage": "https://github.com/Chougle-saud/monsoon-restaurant#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.1"
+  }
+}
