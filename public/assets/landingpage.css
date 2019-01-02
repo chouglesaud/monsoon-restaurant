@@ -51,7 +51,7 @@
         list-style: none;
     }
     .img{
-        margin-top: 0px;
+        margin-top: -8px;
     }
 
     .strip {
@@ -89,7 +89,7 @@
 
     .footer {
         margin-top: 80px;
-        height: 100vh;
+        padding-bottom: 10px;
     }
 
     .footer .contact {
