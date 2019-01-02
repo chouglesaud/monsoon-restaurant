@@ -27,7 +27,7 @@
 
     .intro p {
         background-color: #861313;
-        width: 50%;
+        width: 75%;
         text-align: center;
         font-family: "Cabin", sans-serif;
         font-size: 18px;
@@ -49,6 +49,9 @@
         padding-left: 10px;
         text-align: right;
         list-style: none;
+    }
+    .img{
+        margin-top: 0px;
     }
 
     .strip {
@@ -86,6 +89,7 @@
 
     .footer {
         margin-top: 80px;
+        height: 100vh;
     }
 
     .footer .contact {
