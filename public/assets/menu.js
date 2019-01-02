@@ -1,6 +1,5 @@
 let clipart = document.querySelectorAll(".clipart");
 let Add_Remove = document.querySelectorAll(".add-remove button");
-
 Add_Remove.forEach(btn => {
   btn.innerHTML = "ADD";
   btn.addEventListener("click", () => {

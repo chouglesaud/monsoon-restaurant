@@ -1,101 +1,119 @@
 /* for mobiles portrait mode*/
 @media (min-width: 320px) and (max-width: 480px) {
-  body {
-    background-color: #ffffff;
-  }
-  .intro {
-    width: 100%;
-    margin-top: 8%;
-  }
-  .upper {
-    height: 65vh;
-  }
-  .intro h1 {
-    text-transform: uppercase;
-    font-family: "Lobster", cursive;
-    font-size: 51px;
-    letter-spacing: 1.2px;
-    color: #cb2b2b;
-  }
-  .intro div {
-    margin-top: -11px;
-  }
-  .intro p {
-    background-color: #861313;
-    width: 50%;
-    text-align: center;
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
-    font-weight: 550;
-    color: #fcf8f8;
-  }
-  .intro .list {
-    margin: 5px auto;
-    width: 50%;
-  }
-  .intro .list li {
-    color: #861313;
-    font-family: "Cabin", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    padding-left: 10px;
-    text-align: right;
-    list-style: none;
-  }
-  .strip {
-    background-color: #b87f0d;
-    padding: 22px;
-  }
-  .icon img {
-    position: absolute;
-    margin-top: -18%;
-    z-index: 100;
-  }
-  .content {
-    background-color: #861313;
-    height: 100vh;
-    padding-top: 20px;
-  }
-  .content h3 {
-    color: #ffffff;
-    font-family: "Cabin", sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-  }
+    body {
+        background-color: #ffffff;
+    }
 
-  .content a {
-    display: block;
-    margin: 10% auto;
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #861313;
-  }
-  .footer {
-    margin-top: 80px;
-  }
-  .footer .contact {
-    font-size: 32px;
-    color: #ffffff;
-    font-weight: 550;
-    font-family: "Cabin", sans-serif;
-  }
-  .footer .p {
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: 550;
-    font-family: "Cabin", sans-serif;
-  }
-  small {
-    font-size: 0.8em;
-  }
-  .row1 a {
-    font-size: 1.01em;
-    color: #ffffff;
-    margin-bottom: -20px;
-  }
-  .row1 a:hover {
-    text-decoration: none;
-    color: black;
-  }
+    .intro {
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .upper {
+        height: 65vh;
+    }
+
+    .intro h1 {
+        text-transform: uppercase;
+        font-family: "Lobster", cursive;
+        font-size: 51px;
+        letter-spacing: 1.2px;
+        color: #cb2b2b;
+    }
+
+    .intro div {
+        margin-top: -11px;
+    }
+
+    .intro p {
+        background-color: #861313;
+        width: 50%;
+        text-align: center;
+        font-family: "Cabin", sans-serif;
+        font-size: 18px;
+        font-weight: 550;
+        color: #fcf8f8;
+
+    }
+
+    .intro .list {
+        margin: 5px auto;
+        width: 50%;
+    }
+
+    .intro .list li {
+        color: #861313;
+        font-family: "Cabin", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        padding-left: 10px;
+        text-align: right;
+        list-style: none;
+    }
+
+    .strip {
+        background-color: #b87f0d;
+        padding: 22px;
+    }
+
+    .icon img {
+        position: absolute;
+        margin-top: -18%;
+        z-index: 100;
+    }
+
+    .content {
+        background-color: #861313;
+        height: 100vh;
+        padding-top: 20px;
+    }
+
+    .content h3 {
+        color: #ffffff;
+        font-family: "Cabin", sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .content a {
+        display: block;
+        margin: 10% auto;
+        font-family: "Cabin", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #861313;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .footer .contact {
+        font-size: 32px;
+        color: #ffffff;
+        font-weight: 550;
+        font-family: "Cabin", sans-serif;
+    }
+
+    .footer .p {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 550;
+        font-family: "Cabin", sans-serif;
+    }
+
+    small {
+        font-size: 0.8em;
+    }
+
+    .row1 a {
+        font-size: 1.01em;
+        color: #ffffff;
+        margin-bottom: -20px;
+    }
+
+    .row1 a:hover {
+        text-decoration: none;
+        color: black;
+    }
 }

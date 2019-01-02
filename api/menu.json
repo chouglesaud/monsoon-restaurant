@@ -26,7 +26,7 @@
         "Chicken Royal Soup",
         "Prawns Manchow Soup",
         "Chicken Lemon Coriander Soup",
-        "Mutton Souop(Only Monday)"
+        "Mutton Soup(Only Monday)"
       ],
       "price": [120, 110, 120, 100, 120, 130, 110, 120, 130, 140, 130]
     },
@@ -109,7 +109,6 @@
         "Chicken Stuffed kebab"
       ],
       "price": [
-        0,
         230,
         400,
         260,
@@ -249,7 +248,7 @@
       "items": [
         "Prawns Koliwada",
         "Surmai Handi(H)",
-        "urmai Handi(F)",
+        "Surmai Handi(F)",
         "Pomfret Handi(H)",
         "Pomfret Handi(F)",
         "Surmai Tawa Fry",
@@ -440,7 +439,7 @@
         "Pasta Lavena",
         "Pasta Noodles"
       ],
-      "price": []
+      "price": [120, 150, 150, 170, 180, 190, 210]
     },
     {
       "name": "ITALIAN PIZZS(NON VEG)",
@@ -453,7 +452,7 @@
         "Pasta Lavena",
         "Pasta Noodles"
       ],
-      "price": []
+      "price": [140, 170, 170, 190, 200, 210, 230]
     },
     {
       "name": "MOJITO",
