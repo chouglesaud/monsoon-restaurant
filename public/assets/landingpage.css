@@ -51,7 +51,7 @@
         list-style: none;
     }
     .img{
-        margin-top: -8px;
+        margin-top: -15px;
     }
 
     .strip {
@@ -67,7 +67,7 @@
 
     .content {
         background-color: #861313;
-        height: 100vh;
+        height: 120vh;
         padding-top: 20px;
     }
 
