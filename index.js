@@ -4,9 +4,8 @@ const ejs = require("ejs");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const path = require("path");
-// const menu = require("./api/menu");
 const route = require("./routes/routes");
-const port = process.env.PORT || 3000;
+const port = 7800;
 const app = express();
 
 // initialization

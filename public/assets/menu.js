@@ -1,5 +1,7 @@
 let clipart = document.querySelectorAll(".clipart");
 let Add_Remove = document.querySelectorAll(".add-remove button");
+let orderbtn = document.querySelector(".order");
+
 Add_Remove.forEach(btn => {
   btn.innerHTML = "ADD";
   btn.addEventListener("click", () => {
@@ -28,4 +30,36 @@ clipart.forEach(el => {
       sibling.classList.toggle("toggled1");
     }
   });
+});
+
+orderbtn.addEventListener("click", () => {
+  let btnValue = Add_Remove.innerHTML;
+  let i = 0;
+  let array = [];
+
+  Add_Remove.forEach(button => {
+    if (button.innerHTML == "R") {
+      let store = button.parentElement;
+      let Strprice = store.previousElementSibling.children[0].innerHTML.split(
+        "Rs"
+      );
+      let name =
+        store.previousElementSibling.previousElementSibling.children[0]
+          .innerHTML;
+      let price = parseInt(Strprice[0], 10);
+
+      array[i] = { name: name, price: price };
+      i++;
+    }
+  });
+  if (array.length < 1) {
+    alert("Sir, you have't select any order");
+  } else {
+    $.ajax({
+      method: "POST",
+      url: "/order",
+      contentType: "application/json",
+      data: JSON.stringify(array)
+    });
+  }
 });
