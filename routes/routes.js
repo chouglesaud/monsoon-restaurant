@@ -9,8 +9,8 @@ const dburl = require("../myurl/url").url;
 const mongoose = require("mongoose");
 const db = mongoose.connection;
 const Order = require("../model/model1");
-let payment = 0;
 let newOrder;
+let getit;
 
 //connecting to database
 
@@ -56,14 +56,7 @@ Router.post("/order", url, (req, res) => {
               if (!found) {
                 console.log("not found");
               } else {
-                payment = 0;
-                console.log(found);
-
-                found.order.forEach(elprice => {
-                  payment += elprice.price;
-                });
-                console.log(payment);
-                console.log("saved");
+                getit = found;
               }
             })
             .catch(err => {
@@ -79,5 +72,11 @@ Router.post("/order", url, (req, res) => {
     .catch(err => {
       console.log(err);
     });
+});
+Router.get("/order", (req, res) => {
+  res.send(JSON.stringify({ data: getit }));
+});
+Router.post("/confirm", (req, res) => {
+  res.render("orderpage");
 });
 module.exports = Router;

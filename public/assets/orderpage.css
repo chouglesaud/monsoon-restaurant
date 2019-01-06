@@ -1,0 +1,80 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+  .intro {
+    margin-top: 10%;
+  }
+  .intro h1 {
+    text-transform: uppercase;
+    font-family: "Lobster", cursive;
+    font-size: 44px;
+    letter-spacing: 1.3px;
+    color: #cb2b2b;
+  }
+  .intro div {
+    margin-top: -11px;
+  }
+
+  .intro p {
+    background-color: #861313;
+    width: auto;
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: #fcf8f8;
+    padding: 0 8px;
+  }
+  .order {
+    margin-top: 10%;
+    width: auto;
+    border-bottom: 2px dashed #861313;
+    margin-bottom: 5%;
+  }
+  .order h3 {
+    font-family: "Cabin", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    color: #861313;
+  }
+  .bill {
+    width: 90%;
+  }
+  table {
+    font-size: 20px;
+    color: #861313;
+    border: none;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  table th {
+    text-align: center;
+  }
+  .bill table tr {
+    border-style: none;
+  }
+  .price {
+    width: auto;
+    border-bottom: 2px dashed #861313;
+  }
+  .price p {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Cabin", sans-serif;
+    color: #861313;
+  }
+  .confirm button {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20%;
+  }
+}

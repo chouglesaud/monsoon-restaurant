@@ -59,7 +59,10 @@ orderbtn.addEventListener("click", () => {
       method: "POST",
       url: "/order",
       contentType: "application/json",
-      data: JSON.stringify(array)
+      data: JSON.stringify(array),
+      success: function(data) {
+        console.log(data);
+      }
     });
   }
 });
