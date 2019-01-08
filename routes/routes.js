@@ -11,6 +11,7 @@ const db = mongoose.connection;
 const Order = require("../model/model1");
 let newOrder;
 let getit;
+let tablenumber;
 
 //connecting to database
 
@@ -35,6 +36,11 @@ Router.get("/menu", (req, res) => {
   res.render("menupage", { menuitem: menuObj });
 });
 
+Router.post("/tablenumber", url, (req, res) => {
+  let get_table_number = req.body.store;
+  tablenumber = parseInt(get_table_number, 10);
+});
+
 //  getting order
 Router.post("/order", url, (req, res) => {
   let order = req.body;
@@ -44,6 +50,7 @@ Router.post("/order", url, (req, res) => {
     .countDocuments()
     .then(count => {
       newOrder = Order({
+        tablenumber: tablenumber,
         ordernumber: count + 1,
         order: order
       });

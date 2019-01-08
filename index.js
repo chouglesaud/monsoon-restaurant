@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const path = require("path");
 const route = require("./routes/routes");
-const port = 7800;
+const port = process.env.PORT || 3000;
 const app = express();
 
 // initialization

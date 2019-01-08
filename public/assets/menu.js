@@ -1,6 +1,7 @@
 let clipart = document.querySelectorAll(".clipart");
 let Add_Remove = document.querySelectorAll(".add-remove button");
 let orderbtn = document.querySelector(".order");
+let tablenumber = document.querySelector(".myform");
 
 Add_Remove.forEach(btn => {
   btn.innerHTML = "ADD";
@@ -33,6 +34,9 @@ clipart.forEach(el => {
 });
 
 orderbtn.addEventListener("click", () => {
+  let store = tablenumber.value;
+  console.log(store);
+
   let btnValue = Add_Remove.innerHTML;
   let i = 0;
   let array = [];
@@ -51,10 +55,19 @@ orderbtn.addEventListener("click", () => {
       array[i] = { name: name, price: price };
       i++;
     }
+    let store = tablenumber.value;
   });
-  if (array.length < 1) {
+  if (array.length < 1 && store === null) {
     alert("Sir, you have't select any order");
   } else {
+    $.ajax({
+      method: "POST",
+      url: "/tablenumber",
+      data: { store: store },
+      success: function(data) {
+        console.log(data);
+      }
+    });
     $.ajax({
       method: "POST",
       url: "/order",

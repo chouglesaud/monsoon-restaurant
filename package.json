@@ -17,11 +17,12 @@
   },
   "homepage": "https://github.com/Chougle-saud/monsoon-restaurant#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mongodb": "^3.1.10",
-    "mongoose": "^5.4.1"
+    "mongoose": "^5.4.2"
   }
 }

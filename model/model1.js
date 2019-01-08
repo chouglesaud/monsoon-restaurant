@@ -2,6 +2,9 @@ const mongoose = require("mongoose");
 const schema = mongoose.Schema;
 const orderSchema = new schema(
   {
+    tablenumber: {
+      type: Number
+    },
     ordernumber: {
       type: Number,
       default: 1

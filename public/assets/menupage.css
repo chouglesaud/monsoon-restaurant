@@ -1,4 +1,18 @@
+/* for mobile portrait mode */
 @media (min-width: 320px) and (max-width: 480px) {
+  form {
+    margin-top: 3%;
+  }
+  .myform {
+    width: 60%;
+    float: left;
+    margin-top: 16px;
+  }
+  form button {
+    width: 30%;
+    margin-left: 5%;
+  }
+
   .order {
     margin-top: 5%;
     font-size: 18px;
@@ -20,11 +34,183 @@
     margin-top: 5%;
     padding-top: 15px;
     width: 70vw;
+    margin-bottom: 1px;
+  }
+
+  .toggled {
+    width: 85vw;
+    transition: 0.3;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+  }
+
+  .items {
+    display: none;
+    background-color: #cb2b2b;
+    width: 85%;
+    transition: 0.5 ease-in-out;
+  }
+  .toggled1 {
+    display: block;
+    transition: 0.5 ease-in-out;
+  }
+  .items li {
+    list-style: none;
+  }
+  li .li-dish {
+    width: 60%;
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    margin-right: 3px;
+    float: left;
+  }
+  .price {
+    margin-top: 3px;
+    width: 20%;
+    float: left;
+  }
+  .add-remove {
+    margin-top: 0px;
+  }
+  .add-remove button {
+    font-size: 15px;
+    font-weight: bolder;
+    width: 18%;
+  }
+}
+
+/* for desktop  */
+@media (min-width: 1024px) {
+  form {
+    margin-top: 3%;
+  }
+  .myform {
+    width: 60%;
+    float: left;
+    margin-top: 16px;
+  }
+  form button {
+    width: 30%;
+    margin-left: 5%;
+  }
+
+  .order {
+    margin-top: 5%;
+    font-size: 18px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .clipart {
+    -webkit-clip-path: polygon(
+      100% 0,
+      90% 50%,
+      100% 100%,
+      0 100%,
+      11% 51%,
+      0 0
+    );
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 11% 51%, 0 0);
+    background-color: #cb2b2b;
+    margin-top: 5%;
+    padding-top: 15px;
+    width: 80vw;
     margin-bottom: 5px;
   }
 
   .toggled {
     width: 85vw;
+    transition: 0.3;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+  }
+
+  .items {
+    display: none;
+    background-color: #cb2b2b;
+    width: 85%;
+    transition: 0.5 ease-in-out;
+  }
+  .toggled1 {
+    display: block;
+    transition: 0.5 ease-in-out;
+  }
+  .items li {
+    list-style: none;
+  }
+  li .li-dish {
+    width: 60%;
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    margin-right: 3px;
+    float: left;
+  }
+  .price {
+    margin-top: 3px;
+    width: 20%;
+    float: left;
+  }
+  .add-remove {
+    margin-top: 0px;
+  }
+  .add-remove button {
+    font-size: 15px;
+    font-weight: bolder;
+    width: 18%;
+  }
+}
+
+/* for tablet  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  form {
+    margin-top: 3%;
+  }
+  .myform {
+    width: 60%;
+    float: left;
+    margin-top: 16px;
+  }
+  form button {
+    width: 30%;
+    margin-left: 5%;
+  }
+
+  .order {
+    margin-top: 5%;
+    font-size: 18px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .clipart {
+    -webkit-clip-path: polygon(
+      100% 0,
+      90% 50%,
+      100% 100%,
+      0 100%,
+      11% 51%,
+      0 0
+    );
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 11% 51%, 0 0);
+    background-color: #cb2b2b;
+    margin-top: 5%;
+    padding-top: 15px;
+    width: 60vw;
+    margin-bottom: 5px;
+  }
+
+  .toggled {
+    width: 55vw;
     transition: 0.3;
   }
 
