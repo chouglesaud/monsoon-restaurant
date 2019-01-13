@@ -2,24 +2,31 @@ let clipart = document.querySelectorAll(".clipart");
 let Add_Remove = document.querySelectorAll(".add-remove button");
 let orderbtn = document.querySelector(".order");
 let tablenumber = document.querySelector(".myform");
+let array = [];
 
-Add_Remove.forEach(btn => {
+Add_Remove.forEach((btn, i) => {
   btn.innerHTML = "ADD";
+
   btn.addEventListener("click", () => {
     if (btn.innerHTML == "ADD") {
       btn.innerHTML = "R";
       btn.style.backgroundColor = "#cb2b2b";
       btn.style.color = "#fff";
+      array.push(btn);
+      console.log(array.length, array);
     } else {
       btn.innerHTML = "ADD";
       btn.style.backgroundColor = "#5cb85c";
       btn.style.color = "#fff";
+      array.pop(btn);
+      console.log(array.length, array);
     }
   });
 });
 
 clipart.forEach(el => {
   el.addEventListener("click", function(e) {
+    array = [];
     el.classList.toggle("toggled");
     if (e.target.nodeName == "DIV") {
       let parent = e.target.parentElement;

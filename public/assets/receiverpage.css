@@ -1,0 +1,59 @@
+@media (min-width: 321px) and (max-width: 480px) {
+  #btn {
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  .clipart {
+    -webkit-clip-path: polygon(
+      100% 0,
+      90% 50%,
+      100% 100%,
+      0 100%,
+      11% 51%,
+      0 0
+    );
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 11% 51%, 0 0);
+    background-color: #cb2b2b;
+    margin-top: 5%;
+    padding-top: 15px;
+    width: 80vw;
+    margin-bottom: 1px;
+  }
+  h3 {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+  }
+  .toggled {
+    width: 90vw;
+    transition: 0.3;
+  }
+
+  li .li-dish {
+    width: 60%;
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    margin-right: 3px;
+    float: left;
+  }
+  .price {
+    margin-top: 3px;
+    width: 20%;
+    float: left;
+  }
+  .items li {
+    list-style: none;
+  }
+  .items {
+    display: none;
+    /* background-color: #cb2b2b; */
+    width: 85%;
+    transition: 0.5 ease-in-out;
+  }
+  .toggled1 {
+    display: block;
+    transition: 0.5 ease-in-out;
+  }
+}

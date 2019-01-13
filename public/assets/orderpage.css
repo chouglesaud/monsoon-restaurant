@@ -9,7 +9,9 @@
   .intro {
     margin-top: 10%;
   }
-
+  .jargan img {
+    margin-top: 10px;
+  }
   .intro p {
     background-color: #861313;
     width: auto;
@@ -69,6 +71,13 @@
     font-weight: 500;
     margin-left: 20%;
   }
+  .greet {
+    font-size: 28px;
+    margin-top: 10%;
+    font-family: "cabin", sans-serif;
+    font-weight: 500;
+    color: #861313;
+  }
 }
 
 /* for desktop */
@@ -83,6 +92,13 @@
     margin-top: 3%;
   }
 
+  .greet {
+    font-size: 28px;
+    margin-top: 10%;
+    font-family: "cabin", sans-serif;
+    font-weight: 500;
+    color: #861313;
+  }
   .order {
     width: auto;
     border-bottom: 2px dashed #861313;
