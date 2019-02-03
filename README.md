@@ -8,7 +8,7 @@
 - Update operation
 - Delete operation
 
-> #### Which technology i used?
+> #### What i used?
 - HTML
 - CSS
 - Bootstrap
